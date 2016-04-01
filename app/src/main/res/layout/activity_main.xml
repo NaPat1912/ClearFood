@@ -7,10 +7,35 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ice_pbru.changlao.nataporn.clearfood.MainActivity">
+    tools:context="ice_pbru.changlao.nataporn.clearfood.MainActivity"
+    android:background="#d496fceb">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ClearFood"
+        android:id="@+id/textView"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/h1"
+        android:textColor="#060606" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Me"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#020202"
+        android:background="#73ffffff" />
+
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
 </RelativeLayout>
